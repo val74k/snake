@@ -27,6 +27,16 @@ body{
     margin-top: 25vh;
 }
 
+.objectif{
+    position: absolute;
+    background-color: green;
+    border-radius: 15px;
+    height: 45px;
+    width: 45px;
+}
+
+
+
 .snake{
     position: absolute;
     height: 50px;

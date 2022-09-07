@@ -26,6 +26,11 @@ function loop(){
     }
 
 
+    if (posX > 450){posX -= 450}
+    else if (posY > 450){posY -= 450}
+    else if (posX < 0){posX -= -450}
+    else if (posY < 0){posY -= -450}
+
     document.getElementById("snake").style.transform = "translate(" + posX + "px," + posY + "px)";
 
     setTimeout(loop, 20);
