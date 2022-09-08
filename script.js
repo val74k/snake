@@ -7,15 +7,42 @@ let speed = 3;
 
 let direction = 0;
 
+let margin = 45;
 
 let oposX = Math.floor(Math.random() * 450);
 let oposY = Math.floor(Math.random() * 450);
 
+let mode = 0;
+let modename = "hard";
+
+
+
+
+
+function godmode(){
+    speed = 5
+
+    if (posX > 450){posX -= 450}
+    else if (posY > 450){posY -= 450}
+    else if (posX < 0){posX -= -450}
+    else if (posY < 0){posY -= -450}
+
+}
+
+function clear(){
+    posY = 0;
+    posX = 0;
+    score = 0;
+    document.getElementById("score").textContent = score;
+}
 
 function loop(){
-        
+
+    
+
 
     if (direction == 1){
+
         posX -= speed;
     }
     else if (direction == 2){
@@ -29,12 +56,12 @@ function loop(){
     }
 
 
+    if (posX > 450){clear()}
+    else if (posY > 450){clear()}
+    else if (posX < 0){clear()}
+    else if (posY < 0){clear()}
 
-    if (posX > 450){posX -= 450}
-    else if (posY > 450){posY -= 450}
-    else if (posX < 0){posX -= -450}
-    else if (posY < 0){posY -= -450}
-
+   
     // console.log("position X : ",posX)
     // console.log("position Y : ",posY)
     // console.log()
@@ -42,16 +69,13 @@ function loop(){
     // console.log("objectif position Y : ",oposY)
 
 
-    if ((oposX-25 <= posX) && (posX <= oposX+25) && (oposY-25 <= posY) && (posY <= oposY+25)){
+    if ((oposX-margin <= posX) && (posX <= oposX+margin) && (oposY-margin <= posY) && (posY <= oposY+margin)){
         oposX = Math.floor(Math.random() * 450);
         oposY = Math.floor(Math.random() * 450);
-        
-        
 
         score += 1;
         console.log("score = ",score);
        
-        
         document.getElementById("score").textContent = score;
            
     
