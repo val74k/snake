@@ -14,13 +14,6 @@ body{
 }
 
 
-
-.score{
-    position: absolute;
-    top: 10vh;
-    color: #636363;
-}
-
 .box{
     position: relative;
     border: 1px solid #636363 ;
@@ -46,4 +39,11 @@ body{
     width: 50px;
     background-color: white;
     border-radius: 50px;
+}
+
+
+@media screen and (max-device-width: 1280px) {
+	.box{
+        margin-top: 0vh;
+    }
 }
