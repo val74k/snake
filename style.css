@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+#best_score{
+    display: none;
+}
+
 body{
     background-color: #353535;
     display: flex;
@@ -16,14 +20,28 @@ body{
 
 .box{
     position: relative;
-    border: 1px solid #636363 ;
+    border: 1px solid red ;
     border-radius: 15px;
     width: 500px;
     height: 500px;
-    margin-top: 25vh;
+    top: 5vh;
+}
+
+
+.score_box{
+    z-index: -500;
+    margin-top: 30%;
+}
+
+
+.score_box p{
+    color: white;
+    opacity: 0.5;
+    text-align: center;
 }
 
 .objectif{
+    z-index: 500;
     position: absolute;
     background-color: green;
     border-radius: 15px;
@@ -34,6 +52,7 @@ body{
 
 
 .snake{
+    z-index: 1000;
     position: absolute;
     height: 50px;
     width: 50px;

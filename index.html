@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="script.js"></script>
-    <title>Snake game</title>
-    <meta charset="utf-8" />
-  </head>
-  <body>
-    <span>
-    <p>score :</p><p class="score" id="score">0</p>
-  </span>
-    <span>
-    <p>last score :</p><p class="last_score" id="last_score">0</p>
-  </span>
-    <span>
-    <p>best score :</p><p class="best_score" id="best_score">0</p> 
-  </span>
-    <div class="box">
-      <div class="objectif" id="objectif"></div>
-      <div class="snake" id="snake"></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <title>Snake game</title>
+  <meta charset="utf-8" />
+</head>
+
+<body>
+  <div class="box">
+    <div class="objectif" id="objectif"></div>
+    <div class="snake" id="snake"></div>
+    <div class="score_box">
+      <span>
+        <p>score :</p>
+        <p class="score_value" id="score">0</p>
+      </span>
+      <span>
+        <p>last score :</p>
+        <p class="score_value" id="last_score">0</p>
+      </span>
+      <span>
+        <p>best score : (pas fini)</p>
+        <p class="score_value" id="best_score">0</p>
+      </span>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
