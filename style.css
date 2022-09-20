@@ -20,24 +20,26 @@ body{
 
 .box{
     position: relative;
-    border: 1px solid red ;
+    border: 2px solid red ;
     border-radius: 15px;
     width: 500px;
     height: 500px;
-    top: 5vh;
+    top: 1%;
 }
 
 
-.score_box{
-    z-index: -500;
-    margin-top: 30%;
-}
 
 
 .score_box p{
     color: white;
     opacity: 0.5;
     text-align: center;
+}
+
+
+.score_value_center{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
 }
 
 .objectif{
@@ -47,6 +49,9 @@ body{
     border-radius: 15px;
     height: 45px;
     width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
